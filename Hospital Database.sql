@@ -22,4 +22,6 @@ CREATE TABLE appointments (
   doctor_name VARCHAR(100),
   date DATE,
   time TIME
+  FOREIGN KEY (patient_id) REFERENCES patients(id),
+  FOREIGN KEY (doctor_id) REFERENCES doctors(id)
 );
