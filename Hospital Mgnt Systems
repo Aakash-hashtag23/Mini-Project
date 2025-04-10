@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Hospital Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+    }
+    header {
+      background: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      padding: 20px;
+    }
+    .form-section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Online Hospital Management System</h1>
+    <p>Manage Patients, Doctors, Appointments, and More</p>
+  </header>
+
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#patient">Register Patient</a>
+    <a href="#doctor">Register Doctor</a>
+    <a href="#appointment">Book Appointment</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="dashboard" class="form-section">
+      <h2>Dashboard</h2>
+      <p>Welcome to the Hospital Management Dashboard. Select an option from the menu to proceed.</p>
+    </section>
+
+    <section id="patient" class="form-section">
+      <h2>Patient Registration</h2>
+      <form>
+        <input type="text" placeholder="Patient Name" required />
+        <input type="number" placeholder="Age" required />
+        <select required>
+          <option value="">Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+        <textarea placeholder="Medical History"></textarea>
+        <button type="submit">Register Patient</button>
+      </form>
+    </section>
+
+    <section id="doctor" class="form-section">
+      <h2>Doctor Registration</h2>
+      <form>
+        <input type="text" placeholder="Doctor Name" required />
+        <input type="text" placeholder="Specialization" required />
+        <input type="text" placeholder="Contact Number" required />
+        <button type="submit">Register Doctor</button>
+      </form>
+    </section>
+
+    <section id="appointment" class="form-section">
+      <h2>Book Appointment</h2>
+      <form>
+        <input type="text" placeholder="Patient Name" required />
+        <input type="text" placeholder="Doctor Name" required />
+        <input type="date" required />
+        <input type="time" required />
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Online Hospital Management System. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
