@@ -15,6 +15,21 @@
       color: white;
       padding: 20px;
       text-align: center;
+      position: relative;
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      margin-top: 10px;
+      font-size: 14px;
     }
     nav {
       background: #333;
@@ -29,6 +44,7 @@
     }
     .container {
       padding: 20px;
+      margin-bottom: 60px; 
     }
     .form-section {
       background: white;
@@ -68,8 +84,14 @@
 <body>
 
   <header>
-    <h1> Hospital Management </h1>
-    <p>Manage Patients, Doctors, Appointments, and More</p>
+    <div class="header-content">
+      <img src="images/hospital-logo.jpg" alt="Hospital Management Logo" width="100">
+      <h1> Hospital Management </h1>
+      <p>Manage Patients, Doctors, Appointments, and More</p>
+      <div class="contact-info">
+        Emergency: 123-456-7890 | Main: 937-040-730 | Email: contact@hospital.com
+      </div>
+    </div>
   </header>
 
   <nav>
@@ -126,7 +148,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Hospital Management . All Rights Reserved.
+    &copy; 2025 Hospital Management . All Rights Reserved. | Contact: 987-654-3210
   </footer>
 
 </body>
